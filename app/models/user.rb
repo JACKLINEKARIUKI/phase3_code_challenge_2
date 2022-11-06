@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
     
     def favorite_product
         self.products.max_by do |product|
-            product.average_rating
+            product
         end
     end
 
