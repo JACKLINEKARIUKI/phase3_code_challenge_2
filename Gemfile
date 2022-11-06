@@ -21,3 +21,7 @@ gem "sqlite3", "~> 1.4"
 gem "require_all"
 
 gem "pry"
+
+group :development, :test do
+  gem 'faker'
+end

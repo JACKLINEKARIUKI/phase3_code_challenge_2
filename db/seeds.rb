@@ -17,6 +17,14 @@ product4 = Product.create(name: "Ballpoint Pens", price: 2)
 product5 = Product.create(name: "Scotch Tape", price: 3)
 
 puts "Creating reviews..."
+Review.create(comment: "This is a great product!", star_rating: 5, user_id: user1.id, product_id: product1.id)
+Review.create(comment: "This does not suit me !", star_rating: 2, user_id: user2.id, product_id: product1.id)
+Review.create(comment: "Poor quality!!", star_rating: 1, user_id: user3.id, product_id: product3.id)
+Review.create(comment: "I definitely recommend this product!", star_rating: 5, user_id: user1.id, product_id: product2.id)
+Review.create(comment: "Works exactly as advertized though its smaller than it seemed!", star_rating: 4, user_id: user2.id, product_id: product2.id)
+Review.create(comment: "I love this product!", star_rating: 5, user_id: user3.id, product_id: product3.id)
+Review.create(comment: "Expensive for nothing!", star_rating: 2, user_id: user1.id, product_id: product4.id)
+Review.create(comment: "meh!", star_rating: 2, user_id: user2.id, product_id: product4.id)
 # *****************************************************************
 # * TODO: create reviews! Remember, a review belongs to a product *
 # * and a review belongs to an user.                              *
